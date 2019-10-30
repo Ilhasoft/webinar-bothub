@@ -34,20 +34,20 @@ export default {
   },
   watch: {
     professional(currentValue) {
-      if( true ){
-
+      // if( true ){
+        console.log("dasdasdas");
         const data = {
-          language: 'pt_br',
+          language: 'en',
           text: 'anime de luta'
         }
 
         request.$http.post('/parse/', data);
-      } else {
-        this.filterJobs = this.jobs.filter(e => e === currentValue);
-        if (!currentValue) {
-          this.filterJobs = this.jobs;
-        }
-      }
+      // } else {
+      //   this.filterJobs = this.jobs.filter(e => e === currentValue);
+      //   if (!currentValue) {
+      //     this.filterJobs = this.jobs;
+      //   }
+      // }
      
     }
   },
